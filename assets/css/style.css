@@ -198,15 +198,58 @@ button {
 	padding: 15px;
 }
 
+@media screen and (max-width: 980px) {
+	.wrapper, .heading {
+		width: 768px;
+	}
+
+	.leftAside {
+		width: 450px;
+	}
+
+	.pic {
+		float: none;
+		width: 350px;
+	}
+
+	.image {
+		float: none;
+		width: 380px;
+	}
+
+	.image:nth-child(even) {
+	float: none;
+}
+
+input, textarea {
+		width: 390px;
+	
+	}
+
+} 
+
 @media screen and (max-width: 768px) {
 	.wrapper, .heading {
-		max-width: 730px;
+		width: 640px;
 	}
 	.leftAside {
 		width: 100%;
 		float: none;
 		clear: both;
 		overflow: auto;
+	}
+
+	.image {
+		float: left;
+		width: 275px;
+	}
+
+	.image:nth-child(even) {
+		float: right;
+	}
+
+	.pic {
+		width: 350px;
 	}
 	.rightAside {
 		width: 100%;
@@ -215,8 +258,9 @@ button {
 		clear: both;
 		overflow: auto;
 	}
+
 	input, textarea {
-		width: 670px;
+		width: 585px;
 	
 	}
 }
@@ -246,3 +290,6 @@ button {
 		max-width: 540px;
 	}
 }
+
+
+
